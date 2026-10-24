@@ -1,0 +1,10 @@
+{
+  "name": "Remix Asclepius OS - Med Student Discipline \u0026 Exam System",
+  "description": "OLED dark-mode PWA for medical students preparing for NEET PG, INI-CET, and University Profs with dynamic capacity anti-burnout scheduling, Marrow custom modules ledger, running progression, urge ledger, and Gemini multimodal intelligence.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
