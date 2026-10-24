@@ -838,13 +838,13 @@ export function calculateMultiStreaks(
   const calorieDates = nutritionDays.filter((n) => !n.exceededCal).map((n) => n.date);
 
   return {
-    runningStreak: Math.max(1, countStreak(runningDates)),
-    workoutStreak: Math.max(1, countStreak(workoutDates)),
-    ankiStreak: Math.max(1, countStreak(ankiDates)),
-    mcqStreak: Math.max(1, countStreak(mcqDates)),
-    meditationStreak: directMeditationStreak > 0 ? directMeditationStreak : Math.max(1, countStreak(meditationDates)),
-    screentimeStreak: Math.max(1, countStreak(screenDates)),
-    calorieStreak: Math.max(1, countStreak(calorieDates))
+    runningStreak: countStreak(runningDates),
+    workoutStreak: countStreak(workoutDates),
+    ankiStreak: countStreak(ankiDates),
+    mcqStreak: countStreak(mcqDates),
+    meditationStreak: directMeditationStreak > 0 ? directMeditationStreak : countStreak(meditationDates),
+    screentimeStreak: countStreak(screenDates),
+    calorieStreak: countStreak(calorieDates)
   };
 }
 

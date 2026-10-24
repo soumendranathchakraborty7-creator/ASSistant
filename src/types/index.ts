@@ -42,6 +42,18 @@ export interface MultiPillarStreaks {
   calorieStreak: number;
 }
 
+export interface DailyArchiveRecord {
+  date: string; // YYYY-MM-DD of archived day
+  completedActionIds: string[];
+  energyPercent: number;
+  availableFreeHours: number;
+  mcqsSolvedCount: number;
+  runningKm: number;
+  ankiCardsCount: number;
+  studyMinutes: number;
+  timestamp: string;
+}
+
 export interface ProfileState {
   fullName: string;
   xpPoints: number;
